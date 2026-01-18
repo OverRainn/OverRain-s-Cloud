@@ -1,0 +1,179 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-width: 1200px
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px auto 200px;
+}
+
+header, nav, main, footer,aside {
+    border-radius: 25px;
+    background: white;
+}
+
+header {
+    grid-row: 1 / 2 ;
+    grid-column: 1 / 4 ;
+    text-align: center;
+}
+
+.header-banner {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    display: inline;
+    
+    
+}
+
+nav {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    position: relative;
+	padding: 10px;
+	overflow: auto;
+}
+
+nav.box {
+
+    a {
+        font-weight: normal;
+        font-family: 'Maru' ;
+        color: rgb(244, 119, 169);
+        display: block;
+        margin: 5px 0x;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        padding: 5px 0px;
+        color:rgb(255, 195, 205);
+    }
+
+    h3 {
+        text-align: center;
+        color: rgb(92, 186, 245);
+        font-family: 'Daydream';
+        text-shadow: 2px 2px #314db3;
+    }
+
+    p { font-family: 'Momo';}
+}
+
+main {
+    border: rgb(7, 85, 158) 2px solid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    height: max-content;
+    width: auto;
+    position: relative;
+    overflow: auto;
+}
+
+.statbox {
+    background-image: url(/backgrounds/grid-blue.png);
+    background-repeat: repeat;
+    
+    h4{
+        font-family: 'Daydream';
+        text-align: center;
+        color:rgb(213, 173, 255);
+        text-shadow: 2px 2px #7642bf;
+
+    }
+
+    h6 {
+        font-family: 'Daydream';
+        padding-left: 10%;
+        color: rgb(244, 119, 169);
+    }
+
+    p{
+        font-family: 'Basiic';
+        padding-left: 10%;
+        
+    }
+
+    
+
+}
+
+.welcome-bubble {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    color:black;
+    padding: 10px;
+    gap: 2px;
+
+    p {
+    font-family: 'Momo';
+    font-size: 15px;
+    color: rgb(63, 64, 80) ;
+    word-spacing: 5px;
+    margin:1;
+    top: 50%;
+    height: 100px;
+    width: 60%;
+    overflow-y: auto;
+    scrollbar-gutter: stable;}
+
+}
+
+
+aside {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    max-width: 200px;
+    padding: 10px;
+    overflow: auto;
+
+    h5{
+        font-size: 15px;
+        font-family: 'Daydream';
+        color: rgb(92, 186, 245);
+        text-shadow: 2px 2px #314db3;
+        text-align: center;
+    }
+    
+}
+
+footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    height: max-content;
+}
+
+header,footer {
+    grid-column: 1 / -1;
+}
+
+.blinkies img {
+    width: 150px;
+    height: 35px;
+}
+
+.stamps img {
+     display: inline;
+     width: 100px;
+     height: 55px;
+     margin: 10px;
+    }
