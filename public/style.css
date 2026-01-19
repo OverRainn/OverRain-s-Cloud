@@ -82,7 +82,7 @@ main {
 }
 
 .statbox {
-    background-image: url(/backgrounds/grid-blue.png);
+    background-image: url(backgrounds/grid-blue.png);
     background-repeat: repeat;
     
     h4{
@@ -146,6 +146,15 @@ aside {
     padding: 10px;
     overflow: auto;
 
+    p { 
+        font-family: 'Basiic';
+        top: 50%;
+        height: 150px;
+        width: 100%;
+        padding: 10px;
+        overflow-y: auto;
+        scrollbar-gutter: stable;}
+
     h5{
         font-size: 15px;
         font-family: 'Daydream';
@@ -154,6 +163,20 @@ aside {
         text-align: center;
     }
     
+}
+
+.Updates {
+    background-image: url(backgrounds/yellobg.png);
+    background-repeat: repeat;
+
+    h4 {
+        font-size: 15px;
+        font-family: 'Daydream';
+        color: rgb(112, 104, 104);
+        text-align: center;
+        padding: 5px;
+
+    }
 }
 
 footer {
