@@ -56,6 +56,10 @@ nav.box {
         transition: 0.3s;
     }
 
+    .no-underline {
+        text-decoration: none;
+        
+    }
     a:hover {
         padding: 5px 0px;
         color:rgb(255, 195, 205);
