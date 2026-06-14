@@ -2,6 +2,31 @@
     display: flex;
 }
 
+.back-button {
+    max-width: 150px;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: fixed;
+    top: 0;
+
+    img:hover {filter: drop-shadow(8px 8px 8px rgb(82, 172, 225))}
+
+    a[data-title]:hover:after {
+        font-family: Basiic;
+        content: attr(data-title);
+        padding: 4px 8px;
+        color: #333;
+        position: absolute;
+        left: 150px;
+        top: 100%;
+        white-space: nowrap;
+        z-index: 50px;
+        background-color: white;
+        }
+
+        
+    
+}
 
 .page-left{
     flex: 1;
@@ -37,7 +62,7 @@
     }
 
     button:hover{
-        color: rgb(255, 47, 99);
+        color: #22b0db;
         font-size: 23px;
         transition: 0.3s;
        
@@ -101,7 +126,7 @@
 }
 
 .tab.active {
-  background-color: #eeebff;
+  color: #22b0db;
 }
 
 .tab:hover {
@@ -126,7 +151,6 @@
     img {
         width: 130px ;
         height: 190px;
-        border-radius: 20px;
     }
 
     h3{
@@ -145,7 +169,7 @@
 }
 
 .s-poster:hover{
-    border: 1px solid #ff3a6b;
+    border: 1px solid #22b0db;
     transition: 0.3s;
 }
 
@@ -196,7 +220,7 @@
 
 
 .yt-video:hover{
-    border: 1px solid #ff3a6b;
+    border: 1px solid #22b0db;
     transform: scale(1.05)}
 
 /* CREATORS */
@@ -242,7 +266,7 @@
 }
 
 .c-poster:hover{
-    border: 1px solid #ff3a6b;
+    border: 1px solid #22b0db;
     transition: 0.3s;
 }
 
