@@ -17,3 +17,13 @@
     font-family: "Basiic";
     src: url(basiic.ttf)
 }
+
+@font-face {
+    font-family: "QuicksandBold";
+    src: url(Quicksand-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(Quicksand-SemiBold.ttf)
+}

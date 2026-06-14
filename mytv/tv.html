@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>my tv</title>
+        <link rel="icon" href="https://doqmeat.com/!g/pix/tv1.gif" type="image/png">
+
+        <style>
+            body {
+            background-image: url(backgrounds/SkyBG2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: rgb(255, 232, 232);}
+            
+        </style>
+        <!--CURSOR NEEDED-->
+        
+        <link rel="stylesheet" href="tv.css">
+        <link rel="stylesheet" href="/fonts/stylesheet.css">
+        <script src="tv.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="page-left">
+
+                <div class="tv-container">
+                    <img src="https://i.pinimg.com/1200x/ea/83/a6/ea83a617d7a08414de802c9f2ff7c39d.jpg">
+
+                </div>
+
+            </div>
+
+
+            <div class="page-right">
+
+                <div class="buttons">
+                    <button onclick="openButton('WL')">watch log</button>
+                    <button onclick="openButton('Movies')">movies</button>
+                    <button onclick="openButton('Series')">series</button>
+                    <button onclick="openButton('Youtube')">youtube</button>
+                </div>
+
+                <main>
+
+<!--WATCH LIST TAB-->
+                    <div id="WL" class="button" style="display:none">
+                        <img src="https://i.pinimg.com/736x/f6/3f/ee/f63fee39484283cb1563e60f1387bcd1.jpg">
+
+                    </div>
+
+<!--MOVIES TAB-->
+                    <div id="Movies" class="button" style="display:none">
+                        <div class="movie-tab">
+                            <div class="s-poster">
+                                <img class="s-content" src="">
+                                <div class="s-content"> 
+                                    <h3>  </h3> 
+                                    <p>  </p> </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!--SERIES TAB-->
+                    <div id="Series" class="button" style="display:none">
+                       
+                        <!--TAB BUTTONS-->
+                        <ul class="tabs">
+                            <li data-tab-target="#animated" class="active tab">animated</li>
+                            <li data-tab-target="#shows" class="tab">shows</li>
+                            <li data-tab-target="#drama" class="tab">drama</li>
+                        </ul>
+
+                        <!--SERIES CONTENT-->
+                        <div class="tab-content">
+
+                            <!--ANIMATED-->
+                            <div id="animated" data-tab-content class="active">
+                                <div class="s-poster">
+                                    <img class="s-content" src="https://live.staticflickr.com/65535/52304330374_cccef8ab72_z.jpg">
+                                    <div class="s-content"> 
+                                        <h3> Bee and Puppycat </h3> 
+                                        <p> my favorite show :3 <br> i love how weird it is paired with the soft art style. </p>
+                                    </div>
+                                </div>
+
+                                <div class="s-poster">
+                                    <img class="s-content" src="https://live.staticflickr.com/65535/52304330374_cccef8ab72_z.jpg">
+                                    <div class="s-content"> 
+                                        <h3> Bee and Puppycat </h3> 
+                                        <p> my favorite show :3 <br> i love how weird it is paired with the soft art style. </p>
+                                    </div>
+                                </div>
+
+                                <div class="s-poster">
+                                    <img class="s-content" src="https://live.staticflickr.com/65535/52304330374_cccef8ab72_z.jpg">
+                                    <div class="s-content"> 
+                                        <h3> Bee and Puppycat </h3> 
+                                        <p> my favorite show :3 <br> i love how weird it is paired with the soft art style. </p>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <!--SHOWS-->
+                            <div id="shows" data-tab-content> 
+                                <p>show</p>
+                            </div>
+
+                            <!--DRAMA-->
+                            <div id="drama" data-tab-content> 
+                                <p>drama</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+<!--YOUTUBE TAB-->
+                    <div id="Youtube" class="button" style="display:none">
+                        
+                        <!--TAB BUTTONS-->
+                        <ul class="tabs">
+                                <li data-tab-target="#videos" class="active tab">Videos</li>
+                                <li data-tab-target="#creators" class="tab">Creators</li>
+                                
+                            </ul>
+
+                        
+                        
+                        <!--Y CONTENT-->
+
+                        <div class="yt-tab"> 
+
+                            <!--VIDEOS-->
+                            <div id="videos" data-tab-content class="active"> 
+
+                                    <div class="yt-video"> 
+                                    <a href="https://youtu.be/_LLCz1FCWrY?si=qNu43dMsakH8Eqqr"> 
+                                         <img src="https://i.ytimg.com/vi/_LLCz1FCWrY/hqdefault.jpg?sqp=-oaymwFBCPYBEIoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-BIAC4AOKAgwIABABGH8gFygxMA8=&rs=AOn4CLBztF3ImQQL8Qh15c7wwOwOHpCEfg"> </a>
+                                     <div class="yt-desc"> <b> Two time  </b><br> this video changed my life </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://www.youtube.com/watch?v=JJ5rQvaOICI"> 
+                                    <img src="https://i.ytimg.com/vi/JJ5rQvaOICI/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAQowl0K0epAxNMQ3iZ2TUh6YclUQ"> </a>
+                                <div class="yt-desc"> <b> Recorded by Arizal </b> <br> I LOVEE </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://www.youtube.com/watch?v=mRpiBvwKX6c&list=RDmRpiBvwKX6c&start_radio=1"> 
+                                    <img src="https://i.ytimg.com/vi/mRpiBvwKX6c/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCIXtlSXNHDKe3LGuSIYPz9jhjM8w"> </a>
+                                <div class="yt-desc"> <b> Diamond Jack </b> <br> </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://www.youtube.com/watch?v=3nlSDxvt6JU&list=RD3nlSDxvt6JU&start_radio=1"> 
+                                 <img src="https://i.ytimg.com/vi/3nlSDxvt6JU/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLACMFegtQQm6uB1l8OIY-IsL0okXw"> </a>
+                                <div class="yt-desc"> <b> Snail's House - Pixel Galaxy (Official MV)</b> <br> </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://youtu.be/zf7bsmT-Jn0?si=0JZhrTOk0GoIReJg"> 
+                                 <img src="https://i.ytimg.com/vi/zf7bsmT-Jn0/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBCCHJT7qtNWO3frz48Z83jmcaIUQ"> </a>
+                                <div class="yt-desc"> <b> Pretty Pretty Please I Don't Want to be a Magical Girl </b> <br> </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://youtu.be/8ndBoc6R8_A?si=QTPlYBMi6hzHrL_Q"> 
+                                 <img src="https://i.ytimg.com/vi/8ndBoc6R8_A/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDSQrQZeR1bzVbEWvB99sGIwNAtTg"> </a>
+                                <div class="yt-desc"> <b> PUNCH PUNCH FOREVER! </b> <br> </div>
+                            </div>
+                            
+                            <div class="yt-video">
+                                <a href="https://youtu.be/Yw6u6YkTgQ4?si=UgkGHq975GBN8Zi6"> 
+                                    <img src="https://i.ytimg.com/vi/Yw6u6YkTgQ4/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCuEEAB574IVIpiWsbDsK8VTx2RZw"> </a>
+                                <div class="yt-desc"> <b> hello world </b> <br> </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://youtu.be/UOueMzKYbP0?si=sd-g28edEh_4fP8f"> 
+                                 <img src="https://i.ytimg.com/vi/UOueMzKYbP0/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDibYyTmUK2rWldKD5XHDnWO3sFIg"> </a>
+                                <div class="yt-desc"> <b> Creative Types </b> <br> </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://youtu.be/DtL_giO-EB8?si=FTokEer3yeE66D9w"> 
+                                    <img src="https://i.ytimg.com/vi/DtL_giO-EB8/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AHOBYAC0AWKAgwIABABGDQgWihyMA8=&rs=AOn4CLB0wlKj8yQc_s6FPx557tR4HpZPkA"> </a>
+                                <div class="yt-desc"> <b> Patrick on a seahourse listening to fly me to the moon </b> <br> </div>
+                            </div>
+
+                            <div class="yt-video">
+                                <a href="https://youtu.be/fzQ6gRAEoy0?si=iwx2f-ot0DmDd4Yg"> 
+                                    <img src="https://i.ytimg.com/vi/fzQ6gRAEoy0/hq720.jpg?sqp=-oaymwEnCOgCEMoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD_lUsfCv2JpEftljSKApLYOUYMGw"> </a>
+                                <div class="yt-desc"> <b> Shelter </b> <br> </div>
+                            </div>
+                                
+                                
+                            </div>
+
+                          
+                            <!--CREATORS-->
+                            <div id="creators" data-tab-content> 
+                                    
+
+                                    <div class="c-poster">
+                                        <a href="https://www.youtube.com/@BunchofFriendsYT"> 
+                                            <img class="c-content" src="https://yt3.googleusercontent.com/B2g80kaojrydKr8MiP_uooxrINCyp6O4W-ih2QvZhqIaChjTFw7ARfhxJkoUAsS77O9Egie3=s900-c-k-c0x00ffffff-no-rj"> </a>
+                                        
+                                        <div class="c-content"> 
+                                            <h2> Bunch of Friends </h2> 
+                                        </div>
+
+                                        <div class="c-desc">
+                                            <p> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="c-poster">
+                                        <a href="https://www.youtube.com/@BunchofFriendsYT"> 
+                                            <img class="c-content" src="https://yt3.googleusercontent.com/B2g80kaojrydKr8MiP_uooxrINCyp6O4W-ih2QvZhqIaChjTFw7ARfhxJkoUAsS77O9Egie3=s900-c-k-c0x00ffffff-no-rj"> </a>
+                                        
+                                        <div class="c-content"> 
+                                            <h2> 8illy </h2> 
+                                        </div>
+
+                                        <div class="c-desc">
+                                            <p> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                                 ABCDEFGHIJKLMNOPQRSTUVWXYZ </p>
+                                        </div>
+
+                                    </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+            
+
+                click the tabs ヾ(•ω•`)o
+                    
+                </main>
+
+            </div>
+        </div>
+
+    </body>

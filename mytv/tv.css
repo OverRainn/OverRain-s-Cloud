@@ -1,0 +1,257 @@
+.container{
+    display: flex;
+}
+
+
+.page-left{
+    flex: 1;
+    width: 500px;
+    height: 500px;
+
+    img{
+        max-width: 600px;
+        justify-content: center;
+        margin-top: 230px;
+        margin-left: 150px;
+    }
+}
+
+.page-right{
+    flex: 1;
+    width: 920px;
+    height: 500px;
+    padding-top: 100px;
+
+    button{
+        background-color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border: none;
+        padding: 12px 28px;
+
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Maru';
+        color:rgb(31, 28, 29);
+        
+    }
+
+    button:hover{
+        color: rgb(255, 47, 99);
+        font-size: 23px;
+        transition: 0.3s;
+       
+    }
+
+    main {
+        background: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 920px;
+    }
+}
+
+/* MOVIE */
+.movie-tab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* SERIES */
+#series{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.series-tab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+[data-tab-content]{
+    display: none !important;
+}
+
+[data-tab-content].active{
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 50px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+
+  font-family: 'Maru';
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.tab.active {
+  background-color: #eeebff;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.s-poster{
+    
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 270px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    img {
+        width: 130px ;
+        height: 190px;
+        border-radius: 20px;
+    }
+
+    h3{
+        text-align: center;
+        font-family: 'Quicksandbold';
+    }
+
+    p{
+        font-family: 'Quicksand';
+        font-size: small;
+        padding-left: 5px;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+        
+    }
+}
+
+.s-poster:hover{
+    border: 1px solid #ff3a6b;
+    transition: 0.3s;
+}
+
+.s-content {
+  float: left;
+  width: 50%;
+}
+
+/* YOUTUBE */
+
+#Youtube{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.yt-tab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.yt-video{
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    img {
+        width: 250px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .yt-desc{
+        text-align: center;
+        font-family: 'Quicksand';
+    }
+}
+
+
+.yt-video:hover{
+    border: 1px solid #ff3a6b;
+    transform: scale(1.05)}
+
+/* CREATORS */
+.c-poster{
+    
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 270px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        
+    }
+
+    h2{
+        text-align: center;
+        font-family: 'Quicksandbold';
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    p{
+        font-family: 'Quicksand';
+        font-size: small;
+        padding-left: 5px;
+        margin: 0;
+        overflow-y: auto;
+        max-height: 50px;
+        
+    }
+}
+
+.c-poster:hover{
+    border: 1px solid #ff3a6b;
+    transition: 0.3s;
+}
+
+.c-content {
+  float: left;
+  width: 50%;
+}
+
+.c-desc{
+    grid-column: span 2;
+    
+}
