@@ -142,6 +142,24 @@ main {
 
 }
 
+.vgen-text {
+    background-color:rgb(173, 221, 0);
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px #314db3;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.vgen-text:hover {
+    background-color:rgb(255, 195, 205);
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px #314db3;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
 
 aside {
     grid-row: 2 / 3;

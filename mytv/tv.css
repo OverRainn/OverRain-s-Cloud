@@ -254,6 +254,13 @@
         text-align: left;
     }
 
+    h3{
+        text-align: center;
+        font-family: 'Quicksandbold';
+        margin-left: 10px;
+        text-align: left;
+    }
+
     p{
         font-family: 'Quicksand';
         font-size: small;
@@ -272,7 +279,7 @@
 
 .c-content {
   float: left;
-  width: 50%;
+  width: fit-content;
 }
 
 .c-desc{
