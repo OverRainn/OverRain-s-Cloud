@@ -1,3 +1,8 @@
+center{
+    text-align: center;
+    margin-top: 20px;
+}
+
 .back-button{
     background-color: rgb(75, 113, 238);
     border-radius: 12px;
@@ -85,9 +90,9 @@
 .left-images{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: #3b82f6;
-    max-width: 400px;
+    max-width: 300px;
     padding: 10px;
+    margin-left: 50px;
 
     img{
         width: 300px;
@@ -98,8 +103,8 @@
 .right-images{
     grid-column: 3 / 4;
     grid-row: 1 / 3;
-    background-color: #10b981;
-    width: 400px;
+    width: 300px;
+    margin-left: 30px;
 
     img{
         width: 400px;

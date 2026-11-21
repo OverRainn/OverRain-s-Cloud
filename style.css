@@ -239,9 +239,13 @@ header,footer {
     height: 35px;
 }
 
+stamps, blinkies {
+    margin: 100px;
+}
 .stamps img {
      display: inline;
      width: 100px;
      height: 55px;
      margin: 10px;
+     align-items: center;
     }
